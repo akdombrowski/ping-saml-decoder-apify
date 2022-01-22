@@ -13,6 +13,8 @@ Apify.main(async () => {
   const input = await Apify.getInput();
   console.log("Input:");
   console.dir(input);
+  //   let input = {};
+  //   input.url = "https://developer.pingidentity.com/en/tools/saml-decoder.html";
 
   if (!input || !input.url)
     throw new Error('Input must be a JSON object with the "url" field!');
