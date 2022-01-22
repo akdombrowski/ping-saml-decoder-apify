@@ -41,11 +41,11 @@ Apify.main(async () => {
     "fVNNj9MwFLwj8R8s35s42X4oVltUWgGVlt2oCRy4IGO/UEvxB7azW/49TrZdBQlysmTPzJt573ntmWot3XXhrE/wqwMf0EW12tPhYYM7p6lhXnqqmQJPA6fV7vM9zRNCrTPBcNPiEWWawbwHF6TRGB0PG1weHz5+J6RYkVVDyB1hC0HIMie8EIVoilWzzFesgUJwns8x+grOR+4GRymMSmeepAD3EKtscFWiEM1HXe87OGofmA4RSbL5jKxm2bLO7+gip/PFN4wOESk1C4PYOQRL01QKm8CFKdtCwo1Kq+qxAvckOST2bIdyQ9j3Ugupf07n/PEC8vRTXZez8rGqMdrdsu+N9p0Cd5X/crp/NeH/9iBAmSyNWnDpTbxj3OPt2zcIrftW0yGq205xFQQmWGA9fZ2OWa8ylvYdPB5K00r+G30wTrHw/3hZkg03UsyaAUpBMdnuhHDgfYzZtuZ574CFOJXgOsDpuNZ1yUAMKxdbEeAS0N4oy5z0/TxiCB5eYt6CjrH7Ni7RCZrt5J5xyntcvC7j8Wyc6OcHPBauHdPeGheu/fin+OA4nbAcEbf38efZ/gE=";
 
   // Fill form fields and select desired search options
-  console.log("Fill in search form");
+  console.log("Fill in encoded SAML");
   await page.type("#saml", samlRequest);
 
   // Submit the form and wait for full load of next page
-  console.log("Submit search form");
+  console.log("Submit to decode SAML");
   await Promise.all([page.click('.MuiButton-contained, [type="submit"]')]);
 
   page
