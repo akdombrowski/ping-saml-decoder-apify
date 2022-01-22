@@ -60,10 +60,8 @@ Apify.main(async () => {
   // Obtain and print list of search results
   const decodedSAML = await page.$$eval(".MuiBox-root > pre > code", (codes) =>
     // should only be one in the codes array using the selector chosen, the decoded saml output
-    {
-      console.log("codes: " + codes);
-      return codes[0].innerText;
-    }
+      codes[0].innerText
+
   );
 
   if (!decodedSAML)
